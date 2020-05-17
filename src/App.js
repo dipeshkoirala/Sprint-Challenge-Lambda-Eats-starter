@@ -1,10 +1,17 @@
 import React from "react";
+import MyMain from "./component/mainPage";
+import PizzaBuilder from "./component/form";
+import { Route } from "react-router-dom";
 
 const App = () => {
   return (
     <>
       <h1>Lambda Eats</h1>
-      <p>You can remove this code and create your own header</p>
+
+      {/* <HeadPic /> */}
+
+      <Route exact path="/" component={MyMain} />
+      <Route path="/component" component={PizzaBuilder} />
     </>
   );
 };
