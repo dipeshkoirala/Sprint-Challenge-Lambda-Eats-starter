@@ -14,7 +14,13 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. In 1-2 sentences, explain what React's `useRouteMatch` hook is used for.
 2. How would you explain form validation to someone who has never programmed before?
+
+=> We can explain form validation by displaying information of validation onScreen for the UI.
+
 3. In 1-2 sentences, define end to end testing.
+
+=> It is a technique used to test whether the flow of an application  is right from start to finish  and it is behaving as expected or not. 
+The main objective of end-to-end testing is to identify system dependencies. Besides, to ensure that the data integrity is maintained between various system components and systems.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section **will** prevent you from passing this challenge.
 
