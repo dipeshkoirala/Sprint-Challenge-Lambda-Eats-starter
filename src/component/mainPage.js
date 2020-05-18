@@ -8,8 +8,9 @@ const MyMain = (props) => {
 
   return (
     <div>
-      <img src="../Assets/Pizza.jpg" alt="myImg" />
-
+      <div>
+        <img src="Assets/Pizza.jpg" alt="myImg" />
+      </div>
       <button>Button</button>
       <div className="Card-Wrapper">
         <h2 className="valid">
@@ -20,7 +21,9 @@ const MyMain = (props) => {
           {food.map((a) => {
             return (
               <div className="FF">
-                <img src={a.url} alt={a.url} />
+                <div>
+                  <img src={a.url} alt={a.url} />
+                </div>
                 <p className="nameP">{`${a.name}`}</p>
                 <br></br>
                 <p className="descP">{`${a.Description}`}</p>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import { Button, ButtonGroup } from "reactstrap";
-import Header from "./header/header";
+//import Header from "./header/header";
 import valid from "../data";
 import { titles } from "../data";
 import { size1 } from "../data";
