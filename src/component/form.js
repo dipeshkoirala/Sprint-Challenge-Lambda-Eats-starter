@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 
+import { Button, ButtonGroup } from "reactstrap";
 import Header from "./header/header";
 import valid from "../data";
 import { titles } from "../data";
 import { size1 } from "../data";
-
 import { sauce1 } from "../data";
 import { toppings1 } from "../data";
 import { substitute1 } from "../data";
+import { fastfood } from "../data";
+import AmountSection from "../component/amount/amount";
 
 const PizzaBuilder = () => {
   const [theValid] = useState(valid);
@@ -16,6 +18,19 @@ const PizzaBuilder = () => {
   const [sauce] = useState(sauce1);
   const [toppings] = useState(toppings1);
   const [substitute] = useState(substitute1);
+
+  const [likes, setLike] = useState(fastfood.Amount); //liked +1 (Boolean)=0 or 1
+  const [dkLikes, setDkLike] = useState(false);
+
+  const glutenFree = () => {
+    //change your state
+    setDkLike(!dkLikes);
+    if (dkLikes === true) {
+      setLike(likes - 1);
+    } else {
+      setLike(likes + 1);
+    }
+  };
 
   return (
     <div>
@@ -72,6 +87,42 @@ const PizzaBuilder = () => {
             </div>
           );
         })}
+        {/* <AmountSection> */}
+        <ButtonGroup size="lg">
+          <Button
+            outline
+            color="danger"
+            clickHandle={glutenFree}
+            likes={likes}
+            // active={selSubstitute === "No"}
+          >
+            O----
+          </Button>
+          <Button
+            clickHandle={glutenFree}
+            likes={likes}
+            // active={selSubstitute === "Yes"}
+          >
+            T
+          </Button>
+          <span>{` ${substitute[0].title} (+ $${substitute[0].Amount}.00)`}</span>
+          <br></br>
+        </ButtonGroup>
+        {/* </AmountSection> */}
+
+        {/* This section is for special instruction */}
+        <h2 className="valid">
+          {title[4]}
+          <br></br>
+          <span>{theValid[4]}</span>
+        </h2>
+        <input
+          id="special"
+          type="text"
+          name="spinstruction"
+          // value="{`${a}`}"
+          placeholder={`${theValid[3]}`}
+        />
 
         <p>"just for test"</p>
       </div>
