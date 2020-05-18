@@ -53,3 +53,49 @@ export { fastfood };
 
 const HeadPic = [{ id: 1, url: "../../Assets/Pizza.jpeg" }];
 export { HeadPic };
+
+const titles = [
+  "Choice of Size",
+  "Choice of Sauce",
+  "Add Toppings",
+  "Choice of Substitute",
+  "Special Instruction",
+];
+export { titles };
+
+const size1 = ["SMALL", "MEDIUM", "LARGE"];
+export { size1 };
+
+const sauce1 = ["Original Red", "Garlic Ranch", "BBQ Sauce", "Spinac Alfredo"];
+export { sauce1 };
+
+const toppings1 = [
+  "Pepperoni",
+  "Sausage",
+  "Canadian Bacon",
+  "Spicy Italian Sausage",
+  "Grilled Chicker",
+  "Onions",
+  "Green Pepper",
+  "Diced Tomatos",
+  "Black Olives",
+  "Roasted Garlic",
+  "Artichoke Hearts",
+  "Three Cheese",
+  "Pineapple",
+  "Extra Cheese",
+];
+export { toppings1 };
+
+const substitute1 = [{ title: "Gluten Free Crust", Amount: 1 }];
+export { substitute1 };
+
+const valid = [
+  "Required",
+  "Choose up 10",
+  "Choose up to 1",
+  "Anything else you'd like to add",
+];
+export default valid;
+//src\data.js
+//Assets\Pizza.jpg
