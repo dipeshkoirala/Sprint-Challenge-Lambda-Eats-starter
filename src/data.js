@@ -50,3 +50,6 @@ const fastfood = [
   },
 ];
 export { fastfood };
+
+const HeadPic = [{ id: 1, url: "../../Assets/Pizza.jpeg" }];
+export { HeadPic };
