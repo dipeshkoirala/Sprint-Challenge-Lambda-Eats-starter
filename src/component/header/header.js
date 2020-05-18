@@ -3,6 +3,7 @@ import "../../App.css";
 import { HeadPic } from "../../data";
 import HeaderPost from "./HeaderPost";
 import { Link } from "react-router-dom";
+import "../../App.css";
 
 const Header = () => {
   const [image] = useState(HeadPic);

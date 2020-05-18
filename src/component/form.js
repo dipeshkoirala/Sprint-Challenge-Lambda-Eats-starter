@@ -10,6 +10,7 @@ import { toppings1 } from "../data";
 import { substitute1 } from "../data";
 import { fastfood } from "../data";
 import AmountSection from "../component/amount/amount";
+import "../App.css";
 
 const PizzaBuilder = () => {
   const [theValid] = useState(valid);
@@ -35,7 +36,7 @@ const PizzaBuilder = () => {
   return (
     <div>
       <div className="pizza">
-        <Header />
+        {/* <Header /> */}
         <h1> Build Your Own Pizza </h1>
         <h2 className="valid">
           {title[0]}
@@ -57,6 +58,7 @@ const PizzaBuilder = () => {
           return (
             <div>
               <input
+                className="sauce"
                 id={`${a}`}
                 type="radio"
                 name="saucechoice"
@@ -73,20 +75,23 @@ const PizzaBuilder = () => {
           <br></br>
           <span>{theValid[1]}</span>
         </h2>
-        {toppings.map((a) => {
-          return (
-            <div className="check">
-              <input
-                id={`${a}`}
-                type="checkbox"
-                name="topping"
-                value={`${a}`}
-              />
-              <label htmlFor={`${a}`}>{a}</label>
-              <br></br>
-            </div>
-          );
-        })}
+
+        <div className="checkbo">
+          {toppings.map((a) => {
+            return (
+              <div className="check">
+                <input
+                  id={`${a}`}
+                  type="checkbox"
+                  name="topping"
+                  value={`${a}`}
+                />
+                <label htmlFor={`${a}`}>{a}</label>
+                <br></br>
+              </div>
+            );
+          })}
+        </div>
         {/* <AmountSection> */}
         <ButtonGroup size="lg">
           <Button

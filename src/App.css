@@ -36,3 +36,87 @@
     transform: rotate(360deg);
   }
 }
+
+.header {
+  color: red;
+}
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid green;
+  width: 100%;
+}
+.head-span {
+  border: 1px solid blue;
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+}
+.myList {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid red;
+  border-radius: 20px;
+}
+.myList:hover {
+  background-color: green;
+  color: white;
+}
+.FF {
+  /* display: flex;
+  flex-direction: column; */
+  margin: 10px;
+  width: 30%;
+  height: 250px;
+  background-color: #6bdf60;
+}
+
+.info {
+  border: 1px solid blue;
+  margin: 20px;
+  padding: 15px;
+
+  /* display: flex; */
+  /* justify-content: space-evenly;
+  width: 70%; */
+}
+.CardWrapper {
+  margin: 10px;
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.nameP {
+  font-size: larger;
+  font-weight: bold;
+  padding: 10px;
+  color: Red;
+}
+.descP {
+  padding: 5px;
+  color: rgb(49, 30, 255);
+}
+.sauce {
+  margin: 10px;
+}
+.checkbo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* border: 1px solid blue; */
+  width: 80%;
+  padding: 5px;
+}
+.check {
+  width: 36%;
+  margin: 7px;
+}
+.valid {
+  color: Green;
+}
+span {
+  color: red;
+  font-size: 16px;
+}
