@@ -120,3 +120,17 @@ span {
   color: red;
   font-size: 16px;
 }
+
+.button {
+  padding: 5px;
+
+  text-decoration: none;
+  background: blue;
+  color: white;
+  border: inset;
+}
+
+.validSpan {
+  background: red;
+  color: blue;
+}
