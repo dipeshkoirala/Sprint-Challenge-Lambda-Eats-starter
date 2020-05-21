@@ -6,7 +6,7 @@ import "../../../App.css";
 const validate = (values) => {
   const errors = {};
   if (!values.name) {
-    errors.naame = "Required";
+    errors.name = "Required";
   } else if (values.name.length < 3) {
     errors.name = "Must be atleast 3 characters or more";
   }
@@ -32,7 +32,7 @@ const SignupForm = (props) => {
         type="text"
         placeholder="enter more than 2 letters"
         onChange={formik.handleChange}
-        value={formik.values.name}
+        value={formik.name}
       />
       {formik.errors.name ? (
         <span className="validSpan">{formik.errors.name}</span>

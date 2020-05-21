@@ -103,7 +103,7 @@ const PizzaBuilder = (props) => {
           <SignupForm value={dataState.name} />
           <ChoiceBuilder />
           <Radio />
-          <CheckBoxBuilder />
+          <CheckBoxBuilder value={dataState.topping} />
           <SpecialInstruction />
           {<AmountSection clickhandle={IsglutenFree} amount={amount} />}
           {console.log("-->" + amount)}
