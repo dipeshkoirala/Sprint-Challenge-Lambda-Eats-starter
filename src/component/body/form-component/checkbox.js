@@ -150,6 +150,7 @@ const CheckBoxBuilder = () => {
     console.log(selected);
     //validate();
     alert("Values already Selected : " + selected.join(","));
+    selected.slice(8, 13);
   }
 
   return (

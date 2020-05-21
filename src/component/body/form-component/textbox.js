@@ -13,12 +13,12 @@ const validate = (values) => {
 
   return errors;
 };
-const SignupForm = () => {
+const SignupForm = (props) => {
   // Pass the useFormik() hook initial form values and a submit function that will
   // be called when the form is submitted
   const formik = useFormik({
     initialValues: {
-      name: "",
+      name: props.value,
     },
     validate,
   });

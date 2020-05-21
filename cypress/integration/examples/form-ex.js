@@ -4,11 +4,13 @@ describe("testing our form inputs", () => {
   });
   it("Finds the Named Input", () => {
     cy.get('input[name="name"]')
+      //
       //.check("length gt.than 2")
-      .type("Dk")
-      .should("have.value", "D");
+      .type("Dipesh Koirala")
+      .should("have.value", "Dipesh Koirala");
 
     cy.get('input[type="checkbox"]').check().should("be.checked");
+    //cy.get('input[name="saucechoice"]').type("Spinac Alfredo");
     //   cy.get('input[name="email"]').type("dipeshkoirala@gmail.com");
 
     //   cy.get('input[type="checkbox"]').check().should("be.checked");
